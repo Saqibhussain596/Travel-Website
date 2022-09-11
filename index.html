@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+              <a href="#home"> <strong><span>Kashmir</span>Travels</strong> </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home" onclick="menuSelect();">Home</a></li>
+                    <li><a href="#book" onclick="menuSelect();">Book</a></li>
+                    <li><a href="#packages" onclick="menuSelect();">Packages</a></li>
+                    <li><a href="#services" onclick="menuSelect();">Services</a></li>
+                    <li><a href="#contact" onclick="menuSelect();">Contact</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <i class = "fa fa-user" id="user-btn"></i>
+                <i class = "fa fa-search" id="search-btn"></i>
+                <div id="burger" class="fa fa-bars" onclick="menuSelect();"></div>
+            </div>
+            
+            <form action="" class="search-bar-container">
+           <input type="search" id="search-bar" placeholder="Start your journey here...">
+                    <label for="search-bar" class="fa fa-search">
+                </label>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="login-form-container">
+                
+                <form action="">
+                    <div class="user-login">
+            <i class="fa fa-times" id="close-form"></i>
+                    <h2>USER LOGIN</h2>
+                    <input type="email" class="inputs" placeholder="Email address or phone number">
+                    <input type="password" class="inputs" placeholder="Password">
+                    <input type="button" value="Log In" id="login-btn">
+                    <label for="remember">
+                    <input type="checkbox" id="remember">
+                    Remember me</label>
+                    <p><a href="#">Forgotten password?</a></p></div>
+                    <div class="new-user">
+                        <input type="button" value="Create New Account" id="new-user-btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="home" class="home">
+            <div class="content">
+                <h3>Sometimes you just need a break <br> in a beautiful place</h3>
+                <p>Discover beautiful places on KashmirTravels</p>
+                <a href="#" class="btn">Let's Go</a>
+            </div>
+            <div class="home-slider">
+              <video id="home-vid" class="slider-content
+              " src="videos/vid1.mp4" loop autoplay muted></video>
+                
+                    <img class= "slider-content" src="images/img1.jpg">
+                    <img class= "slider-content" src="images/img2.jpg">
+                    <img class= "slider-content" src="images/img3.jpg">
+                    <img class= "slider-content" src="images/img4.jpg">
+                
+                <a class="slider-btn previous" onclick="setSlides(-1)">❮</a>
+                <a class="slider-btn next" onclick="setSlides(1)">❯</a>
+        
+            </div>
+        </section>
+
+        <div class="temp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quos ut voluptates deleniti corrupti iure illo nostrum. Minima accusantium, architecto cumque at, sed quam porro nisi magni amet ea accusamus. lorem1000</div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src = "js/index.js" defer></script>
+</body>
+</html>

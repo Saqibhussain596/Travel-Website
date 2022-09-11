@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&family=Roboto&display=swap');
+@keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, 'Roboto';
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    padding-top: 10.81rem;
+  }
+.navbar{
+    background-color:rgb(245, 239, 239) ;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    padding: 3.5rem 0;
+    position:fixed;
+    top: 0;
+    z-index: 1002;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 10px 0px rgba(0, 0, 0, .4);
+}
+#burger{
+    display: none;
+    color: goldenrod;
+    font-size: 2.8rem;
+    border: 0.3rem solid rgb(44, 40, 40);
+    border-radius: 4px;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+}
+.logo{
+    font-size: 2.5rem;
+    text-shadow: 0.1rem 0.1rem rgba(34, 30, 30, 0.726);
+}
+.logo span{
+    color: #79c700;
+}
+.logo a{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+ul li a{
+    color:rgb(44, 41, 41) ;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 1.07em;
+    margin:0 15px;
+} 
+nav ul li a:after {
+    background-color: rgb(44, 41, 41);
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+  
+nav ul li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+.icons i{
+    color: rgb(44, 41, 41);
+    cursor: pointer;
+    font-size: 2.4rem;
+    margin-right: 2rem;
+    transition: 0.3s;
+}
+.icons i:hover{
+    color: goldenrod;
+}
+.search-bar-container{
+    background-color:rgb(44, 41, 41) ;
+    padding: 2rem;
+    position: absolute;
+    width: 100%;
+    border-top: 0.1rem solid wheat;
+    top: 100%;
+    right: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+    transition: 0.5s;
+    z-index: 1001;
+}
+.search-bar-container.active{
+  right: 0;
+}
+.search-bar-container #search-bar{
+    width: 96%;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.4rem 1rem;
+    font-size:large;
+}
+.search-bar-container label{
+    margin-left: 1.2rem;
+    transition: 0.2s;
+}
+.search-bar-container label:hover{
+    color: goldenrod;
+    cursor: pointer;
+}
+.login-form-container .user-login #close-form{
+    font-size: 3rem;
+    align-self: flex-end;
+    color: black;
+    cursor: pointer;
+}
+.login-form-container{
+    background-color: rgba(0,0,0,0.6);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: -150%;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 2000;
+    transition: 0.5s;
+}
+.login-form-container.active{
+    top: 0;
+}
+.login-form-container form{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    width: 50rem;
+   
+}
+.login-form-container .user-login{
+    display: flex;
+    flex-direction: column;
+}
+.user-login h2{
+    font-size: 2.5rem;
+    padding-bottom:1.5rem;
+    text-align: center;
+    color: rgb(73, 64, 64);
+    font-weight: 600;
+    user-select: none;
+}
+.user-login input{
+    border: 0.2rem solid goldenrod;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    font-size: 1.5rem;
+}
+.user-login #login-btn{
+    background-color: rgb(133, 187, 51);
+    border: 0.3rem solid  rgb(133, 187, 51);
+    border-radius: 0.8rem;
+    color:rgb(251, 251, 251);
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.user-login #login-btn:hover{
+    background-color: whitesmoke;
+    color:  rgb(133, 187, 51);
+}
+.user-login label{
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    user-select: none;
+}
+.user-login p{
+    font-size: 1.5rem;
+    padding: 0 0 1rem 0;
+    text-align: center;
+}
+.user-login p a{
+    text-decoration: none;
+} 
+.new-user{
+    padding: 2rem;
+    text-align: center;
+    border-top: 0.1rem solid rgba(0,0,0,0.4);
+}
+.new-user #new-user-btn{
+    background-color:goldenrod;
+    padding: 1rem 2rem;
+    border: 0.3rem solid goldenrod;
+    border-radius: 0.8rem;
+    color:rgb(251, 251, 251);
+    font-weight: bolder;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.new-user #new-user-btn:hover{
+    color: goldenrod;
+    background-color: whitesmoke;
+}
+.home{
+    min-height: 87vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.home .content{
+    color: rgb(218, 165, 32);
+    text-align: center;
+    z-index: 1;
+    user-select: none;
+    text-shadow: 0.1rem 0.1rem black;
+}
+.home .content h3{
+    font-size:3.2rem;
+    text-transform: uppercase;
+    line-height: 34px;
+}
+.home .content p{
+    font-size:2rem;
+    padding: 0 0 2.2rem 0;
+}
+.home .home-slider{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home .home-slider .slider-content {
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    object-fit: cover;
+    animation-name: fade;
+  animation-duration: 1.5s;
+  }
+.home .home-slider .slider-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 0.8rem 1.8rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: 100;
+  }
+.previous {
+    left: 2%;
+  }
+.next {
+    right: 2%;
+  }
+.home .home-slider .slider-btn:hover {
+    color: rgb(255, 253, 253);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+  
+

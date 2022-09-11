@@ -1,0 +1,21 @@
+.center{
+    text-align: center;
+}
+.btn{
+    text-decoration: none;
+    padding: 1rem 4.5rem;
+    background-color: rgb(133, 187, 51);
+    border: 0.3rem solid  rgb(133, 187, 51);
+    color:rgb(251, 251, 251);
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: none;
+}
+.btn:hover{
+    background-color: rgba(133, 187, 51, 0.437); ;
+    color: black;
+    text-shadow: none;
+}
