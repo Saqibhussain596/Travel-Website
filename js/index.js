@@ -61,7 +61,7 @@ function temp(){
 }
 function intervalManager(flag) {
    if(flag)
-   intervalId = setInterval(temp,5000);
+   intervalId = setInterval(temp,10000);
    else
      clearInterval(intervalId);
 }

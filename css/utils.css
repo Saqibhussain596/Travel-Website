@@ -1,14 +1,21 @@
 .center{
     text-align: center;
 }
+.flex{
+    display: flex;
+}
+.section:not(#home){
+    padding: 3rem 5rem;
+    margin: 3rem 0;
+}
 .btn{
     text-decoration: none;
-    padding: 1rem 4.5rem;
+    padding: 0.8rem 4rem;
     background-color: rgb(133, 187, 51);
     border: 0.3rem solid  rgb(133, 187, 51);
     color:rgb(251, 251, 251);
-    font-weight: bolder;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
     cursor: pointer;
     transition: 0.5s;
@@ -18,4 +25,16 @@
     background-color: rgba(133, 187, 51, 0.437); ;
     color: black;
     text-shadow: none;
+}
+.heading{
+    margin: 3rem 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.heading span{
+    color: #79c700;
+    background-color: #77c7004f;
+    border-radius: 0.5rem;
+    margin: 0 0.22rem;
+    padding: 0rem 0.8rem;
 }

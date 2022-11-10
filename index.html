@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
+    <title>Kashmir Travels</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
    
-    
+    <script src = "js/index.js" defer></script>
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar flex">
             <div class="logo">
-              <a href="#home"> <strong><span>Kashmir</span>Travels</strong> </a>
+              <a href="#home"> <strong><span>Kashmir</span>Travels</strong> 
+            </a>
             </div>
             <div class="menu">
-                <ul>
+                <ul class="flex">
                     <li><a href="#home" onclick="menuSelect();">Home</a></li>
                     <li><a href="#book" onclick="menuSelect();">Book</a></li>
                     <li><a href="#packages" onclick="menuSelect();">Packages</a></li>
@@ -33,7 +34,7 @@
                 <div id="burger" class="fa fa-bars" onclick="menuSelect();"></div>
             </div>
             
-            <form action="" class="search-bar-container">
+            <form action="" class="search-bar-container flex">
            <input type="search" id="search-bar" placeholder="Start your journey here...">
                     <label for="search-bar" class="fa fa-search">
                 </label>
@@ -42,11 +43,12 @@
     </header>
 
     <main>
+        <!-- Login form starts -->
         <section>
-            <div class="login-form-container">
+            <div class="login-form-container flex">
                 
                 <form action="">
-                    <div class="user-login">
+                    <div class="user-login flex">
             <i class="fa fa-times" id="close-form"></i>
                     <h2>USER LOGIN</h2>
                     <input type="email" class="inputs" placeholder="Email address or phone number">
@@ -57,17 +59,19 @@
                     Remember me</label>
                     <p><a href="#">Forgotten password?</a></p></div>
                     <div class="new-user">
-                        <input type="button" value="Create New Account" id="new-user-btn">
+                        <input type="button" value="Create New Account" id="new_user_btn">
                     </div>
                 </form>
             </div>
         </section>
+        <!-- Login form ends -->
 
-        <section id="home" class="home">
+        <!-- home section starts -->
+        <section id="home" class="home section flex">
             <div class="content">
                 <h3>Sometimes you just need a break <br> in a beautiful place</h3>
                 <p>Discover beautiful places on KashmirTravels</p>
-                <a href="#" class="btn">Let's Go</a>
+                <a href="#book" class="btn">Book Now</a>
             </div>
             <div class="home-slider">
               <video id="home-vid" class="slider-content
@@ -83,12 +87,102 @@
         
             </div>
         </section>
+ <!-- home section ends -->
 
-        <div class="temp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quos ut voluptates deleniti corrupti iure illo nostrum. Minima accusantium, architecto cumque at, sed quam porro nisi magni amet ea accusamus. lorem1000</div>
+        <!-- booking section starts  -->
+       <section id="book" class="book section">
+        <div class="heading center">
+            <span>W</span><span>H</span><span>E</span><span>R</span><span>E</span>&nbsp; <span>T</span><span>O</span>&nbsp; <span>N</span><span>E</span><span>X</span><span>T</span>&nbsp; <span>?</span>
+        </div>
+        <div class="content flex">
+        <div class="bookingForm flex">
+            <form action="">
+           <h3>Where To</h3>
+           <input type="text" placeholder="Destination Name">
+           <h3>How Many</h3>
+           <input type="text" placeholder="Number of guests">
+           <h3>Arrival Date</h3>
+           <input type="date">
+            <h3>Leaving Date</h3>
+            <input type="date"><br>
+           <input type="button" value="Book Now" class="btn">
+        </form>
+        </div>
+        <div class="imageContainer">
+            <img src="images/bookgif.gif" alt="Image">
+        </div>
+    </div>
+       </section>
+       <!-- booking section ends -->
+    
+       <!-- package section starts  -->
+       <section id="packages" class="packages section">
+        <div class="heading center">
+          <span>P</span><span>A</span><span>C</span><span>K</span><span>A</span><span>G</span><span>E</span><span>S</span>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="img-container"><img src="images/pahalgam.webp" alt="Image"></div>
+                <h3 class="location"><i class="fas fa-map-marker-alt"></i> Pahalgam</h3>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolores! Delectus quam.</span>
+                <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                <span class="price">&#8377; 10000 <temp class="original-price"><strike>&#8377; 15000</strike></temp></span>
+               <span><input type="button" value="Book Now" class="btn"></span>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="images/gulmarg.webp" alt="Image"></div>
+                <h3 class="location"><i class="fas fa-map-marker-alt"></i> Gulmarg</h3>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolores! Delectus quam.</span>
+                <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="price">&#8377; 10000 <temp class="original-price"><strike>&#8377; 15000</strike></temp></span>
+                <span><input type="button" value="Book Now" class="btn"></span>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="images/sonmarg.jpg" alt="Image"></div>
+                <h3 class="location"><i class="fas fa-map-marker-alt"></i> Sonamarg</h3>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolores! Delectus quam.</span>
+                <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                <span class="price">&#8377; 10000 <temp class="original-price"><strike>&#8377; 15000</strike></temp></span>
+                <span><input type="button" value="Book Now" class="btn"></span>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="images/patnitop.jpg" alt="Image"></div>
+                <h3 class="location"><i class="fas fa-map-marker-alt"></i> Patnitop</h3>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolores! Delectus quam.</span>
+                <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                <span class="price">&#8377; 10000 <temp class="original-price"><strike>&#8377; 15000</strike></temp></span>
+                <span><input type="button" value="Book Now" class="btn"></span>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="images/dachigam.webp" alt="Image"></div>
+                <h3 class="location"><i class="fas fa-map-marker-alt"></i> Dachigam National Park</h3>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolores! Delectus quam.</span>
+                <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                <span class="price">&#8377; 10000 <temp class="original-price"><strike>&#8377; 15000</strike></temp></span>
+                <span><input type="button" value="Book Now" class="btn"></span>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="images/wulur lake.jpg" alt="Image"></div>
+                <h3 class="location"><i class="fas fa-map-marker-alt"></i> Wulur Lake</h3>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolores! Delectus quam.</span>
+                <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                <span class="price">&#8377; 10000 <temp class="original-price"><strike>&#8377; 15000</strike></temp></span>
+                <span><input type="button" value="Book Now" class="btn"></span>
+            </div>
+        </div>
+       </section>
+        <!-- package section ends -->
+
+        <!-- service section starts -->
+        <section id="services" class="services section"></section>
+        <!-- service section ends -->
+
+        <!-- contact section starts  -->
+        <section id="contact" class="contact section"></section>
+        <!-- contact section ends -->
+
     </main>
     <footer>
-
     </footer>
-    <script src = "js/index.js" defer></script>
 </body>
 </html>
