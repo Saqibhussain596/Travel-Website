@@ -4,7 +4,7 @@
 .flex{
     display: flex;
 }
-.section:not(#home){
+.section:not(#home, #contact){
     padding: 3rem 5rem;
     margin: 3rem 0;
 }
