@@ -238,5 +238,13 @@
         .book .content .bookingForm form h3{
             font-size: 1.7rem;
         }
-        
+        #contact .container .form-container{
+            padding: 1rem 2rem;
+            margin: 1rem;
+            width: 28rem;
+        }
+        #contact .form-container form :where(input, textarea){
+            padding: 0.2rem;
+            
+        }
 }
